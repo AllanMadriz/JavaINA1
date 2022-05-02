@@ -68,6 +68,8 @@ public class frmAgregarProducto extends javax.swing.JFrame {
             idCategoria = 4;
         } else if (cboCategorias.getSelectedItem().equals("Farmacia")) {
             idCategoria = 5;
+        } else if (cboCategorias.getSelectedItem().equals("Diario")) {
+            idCategoria = 6;
         }
 
         Producto producto = new Producto();
@@ -239,7 +241,7 @@ public class frmAgregarProducto extends javax.swing.JFrame {
 
         jLabel7.setText("Categoria del Producto");
 
-        cboCategorias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Congelados", "Refrescos", "Licores", "Aseo Personal", "Farmacia" }));
+        cboCategorias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Congelados", "Refrescos", "Licores", "Aseo Personal", "Farmacia", "Diario" }));
 
         jLabel8.setText("Proveedor");
 

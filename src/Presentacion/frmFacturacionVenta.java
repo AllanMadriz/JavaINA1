@@ -53,7 +53,9 @@ public class frmFacturacionVenta extends javax.swing.JFrame {
     private Factura GenerarEntidad() {
         Factura factura = new Factura();
         
-//        factura.setIdFactura(Integer.valueOf(txtId.getText()));
+        if (!txtId.getText().equals("")) {
+            factura.setIdFactura(Integer.valueOf(txtId.getText()));
+        }
         factura.setFechaFactura(new java.sql.Date(dchFecha.getDate().getTime()));
         factura.setTipoFactura(txtTipo.getText());
         
